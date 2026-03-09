@@ -99,7 +99,7 @@
         
         let foundSecretsArray = JSON.parse(localStorage.getItem('deskventure-found-secrets') || '[]');
         let foundSecrets = foundSecretsArray.length;
-        const totalSecrets = 27;
+        const totalSecrets = 32;
 
         // Публичные команды
         const commands = {
@@ -147,7 +147,7 @@
 ${foundSecrets === 0 ? 'Начни искать...' : 
   foundSecrets < 10 ? 'Ты на правильном пути.' :
   foundSecrets < 20 ? 'Ты близко к правде.' :
-  foundSecrets === 27 ? 'ТЫ НАШЁЛ ВСЁ. Спасибо.' :
+  foundSecrets === 32 ? 'ТЫ НАШЁЛ ВСЁ. Спасибо.' :
   'Ты почти раскрыл всё.'}`,
                 secret: false
             }
